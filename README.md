@@ -39,21 +39,22 @@ For macOS/Linux:
 4. **Environment Variables**
 
 Create a `.env` file in the project root directory and populate it with the necessary API keys:
-`
-#### Pinecone API Key
+```
+# Pinecone API Key
 PINECONE_API_KEY = "<your_pinecone_api_key_here>"
 
-#### Hugging Face API Token
+# Hugging Face API Token
 HUGGINGFACEHUB_API_TOKEN = "<your_huggingface_api_token_here>"
 
-#### Google API Key
+# Google API Key
 GOOGLE_API_KEY = "<your_google_api_key_here>"
 
-#### Reddit Credentials for traffic_management.ipynb
+# Reddit Credentials for traffic_management.ipynb
+
 CLIENT_ID = "<your_reddit_client_id_here>"
 
 CLIENT_SECRET = "<your_reddit_client_secret_here>"
-`
+```
 Replace <your_pinecone_api_key_here>, <your_huggingface_api_token_here>, <your_google_api_key_here>, <your_reddit_client_id_here>, and <your_reddit_client_secret_here> with your actual API keys and credentials. Instructions for obtaining these keys can be found at:
 - Get your Pinecone API Key: [Pinecone Quickstart Guide](https://docs.pinecone.io/guides/getting-started/quickstart)
 - Get your Hugging Face API Key: [Hugging Face API Quicktour](https://huggingface.co/docs/api-inference/en/quicktour)
