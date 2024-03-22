@@ -18,22 +18,22 @@ Before starting, ensure you have Python installed on your system. This project r
 
    Start by cloning this repository to your local machine:
 
-git clone https://github.com/kavi-99/NUS-NCS-Innovation-Challenge.git
-cd NUS-NCS-Innovation-Challenge
+`git clone https://github.com/kavi-99/NUS-NCS-Innovation-Challenge.git`
+`cd NUS-NCS-Innovation-Challenge`
 
 2. **Set Up a Virtual Environment**
 Create and activate a virtual environment in the project directory:
 
 For Windows:
-python -m venv venv
-.\venv\Scripts\activate
+`python -m venv venv`
+`.\venv\Scripts\activate`
 
 For macOS/Linux:
-python3 -m venv venv
-source venv/bin/activate
+`python3 -m venv venv`
+`source venv/bin/activate`
 
 3. **Install Required Packages**
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 4. **Environment Variables**
 
@@ -62,7 +62,7 @@ Replace <your_pinecone_api_key_here>, <your_huggingface_api_token_here>, <your_g
 ### Running the Application
 
 With the environment set up and the `.env` file configured, you can start the application:
-streamlit run streamlit_app.py
+`streamlit run streamlit_app.py`
 
 Navigate to the URL provided in the terminal to view the application.
 
