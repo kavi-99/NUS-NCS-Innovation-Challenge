@@ -19,6 +19,7 @@ Before starting, ensure you have Python installed on your system. This project r
    Start by cloning this repository to your local machine:
 
 `git clone https://github.com/kavi-99/NUS-NCS-Innovation-Challenge.git`
+
 `cd NUS-NCS-Innovation-Challenge`
 
 2. **Set Up a Virtual Environment**
@@ -26,10 +27,12 @@ Create and activate a virtual environment in the project directory:
 
 For Windows:
 `python -m venv venv`
+
 `.\venv\Scripts\activate`
 
 For macOS/Linux:
 `python3 -m venv venv`
+
 `source venv/bin/activate`
 
 3. **Install Required Packages**
