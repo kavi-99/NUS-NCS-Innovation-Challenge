@@ -2,45 +2,42 @@
 
 Brief description of the project, its purpose, main features, and what problems it aims to solve.
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+This repository contains the code and resources for the NUS-NCS Innovation Challenge. It features an application designed to leverage social media data for enhancing urban traffic management through real-time sentiment analysis.
 
-Prerequisites
-What things you need to install the software and how to install them, for example:
+## Getting Started
 
-Python 3.8 or higher
-pip (Python Package Installer)
-Installation
-A step-by-step series of examples that tell you how to get a development environment running:
+These instructions will help you set up and run the project on your local machine for development and testing purposes.
 
-Clone the Repository
+### Prerequisites
 
-bash
-Copy code
+Before starting, ensure you have Python installed on your system. This project requires Python 3.8 or newer.
+
+### Installation
+
+1. **Clone the Repository**
+
+   Start by cloning this repository to your local machine:
+
 git clone https://github.com/kavi-99/NUS-NCS-Innovation-Challenge.git
 cd NUS-NCS-Innovation-Challenge
-Set up a Virtual Environment
+
+2. **Set Up a Virtual Environment**
+Create and activate a virtual environment in the project directory:
 
 For Windows:
-
-bash
-Copy code
 python -m venv venv
 .\venv\Scripts\activate
-For macOS/Linux:
 
-bash
-Copy code
+For macOS/Linux:
 python3 -m venv venv
 source venv/bin/activate
-Install Required Packages
 
-bash
-Copy code
+3. **Install Required Packages**
 pip install -r requirements.txt
-Create a .env File
 
-Create a .env file in the root directory of the project, and populate it with the necessary API keys as follows:
+4. **Environment Variables**
+
+Create a `.env` file in the project root directory and populate it with the necessary API keys:
 
 plaintext
 Copy code
@@ -56,15 +53,20 @@ GOOGLE_API_KEY = "<your_google_api_key_here>"
 # Reddit Credentials for traffic_management.ipynb
 CLIENT_ID = "<your_reddit_client_id_here>"
 CLIENT_SECRET = "<your_reddit_client_secret_here>"
+
 Replace <your_pinecone_api_key_here>, <your_huggingface_api_token_here>, <your_google_api_key_here>, <your_reddit_client_id_here>, and <your_reddit_client_secret_here> with your actual API keys and credentials. Instructions for obtaining these keys can be found at:
+- Get your Pinecone API Key: [Pinecone Quickstart Guide](https://docs.pinecone.io/guides/getting-started/quickstart)
+- Get your Hugging Face API Key: [Hugging Face API Quicktour](https://huggingface.co/docs/api-inference/en/quicktour)
+- Get your Google API Key: [Google AI Setup Tutorial](https://ai.google.dev/tutorials/setup)
 
-Pinecone API Key
-Hugging Face API Key
-Google API Key
-Start the Application
+### Running the Application
 
-Run the Streamlit application:
-
-bash
-Copy code
+With the environment set up and the `.env` file configured, you can start the application:
 streamlit run streamlit_app.py
+
+Navigate to the URL provided in the terminal to view the application.
+
+## Features
+
+- **Interactive Chatbot**: Engage with our LLM-powered chatbot to explore public sentiments on urban transport.
+- **Traffic Analysis Report**: Access in-depth reports generated from social media data to understand traffic management insights.
