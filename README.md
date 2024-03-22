@@ -1,7 +1,5 @@
 # NUS-NCS-Innovation-Challenge
 
-Brief description of the project, its purpose, main features, and what problems it aims to solve.
-
 This repository contains the code and resources for the NUS-NCS Innovation Challenge. It features an application designed to leverage social media data for enhancing urban traffic management through real-time sentiment analysis.
 
 ## Getting Started
