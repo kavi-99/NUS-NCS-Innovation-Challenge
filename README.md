@@ -55,7 +55,9 @@ CLIENT_ID = "<your_reddit_client_id_here>"
 
 CLIENT_SECRET = "<your_reddit_client_secret_here>"
 ```
-Replace <your_pinecone_api_key_here>, <your_huggingface_api_token_here>, <your_google_api_key_here>, <your_reddit_client_id_here>, and <your_reddit_client_secret_here> with your actual API keys and credentials. Instructions for obtaining these keys can be found at:
+Replace <your_pinecone_api_key_here>, <your_huggingface_api_token_here>, <your_google_api_key_here>, <your_reddit_client_id_here>, and <your_reddit_client_secret_here> with your actual API keys and credentials. 
+
+Instructions for obtaining these keys can be found at:
 - Get your Pinecone API Key: [Pinecone Quickstart Guide](https://docs.pinecone.io/guides/getting-started/quickstart)
 - Get your Hugging Face API Key: [Hugging Face API Quicktour](https://huggingface.co/docs/api-inference/en/quicktour)
 - Get your Google API Key: [Google AI Setup Tutorial](https://ai.google.dev/tutorials/setup)
