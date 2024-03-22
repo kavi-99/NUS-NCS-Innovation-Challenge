@@ -1,49 +1,45 @@
 # NUS-NCS-Innovation-Challenge
 
-Brief description of the project, its purpose, main features, and what problems it aims to solve.
+This repository contains the code and resources for the NUS-NCS Innovation Challenge. It features an application designed to leverage social media data for enhancing urban traffic management through real-time sentiment analysis.
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Getting Started
 
-Prerequisites
-What things you need to install the software and how to install them, for example:
+These instructions will help you set up and run the project on your local machine for development and testing purposes.
 
-Python 3.8 or higher
-pip (Python Package Installer)
-Installation
-A step-by-step series of examples that tell you how to get a development environment running:
+### Prerequisites
 
-Clone the Repository
+Before starting, ensure you have Python installed on your system. This project requires Python 3.8 or newer.
 
-bash
-Copy code
-git clone https://github.com/kavi-99/NUS-NCS-Innovation-Challenge.git
-cd NUS-NCS-Innovation-Challenge
-Set up a Virtual Environment
+### Installation
+
+1. **Clone the Repository**
+
+   Start by cloning this repository to your local machine:
+
+`git clone https://github.com/kavi-99/NUS-NCS-Innovation-Challenge.git`
+
+`cd NUS-NCS-Innovation-Challenge`
+
+2. **Set Up a Virtual Environment**
+Create and activate a virtual environment in the project directory:
 
 For Windows:
+`python -m venv venv`
 
-bash
-Copy code
-python -m venv venv
-.\venv\Scripts\activate
+`.\venv\Scripts\activate`
+
 For macOS/Linux:
+`python3 -m venv venv`
 
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate
-Install Required Packages
+`source venv/bin/activate`
 
-bash
-Copy code
-pip install -r requirements.txt
-Create a .env File
+3. **Install Required Packages**
+`pip install -r requirements.txt`
 
-Create a .env file in the root directory of the project, and populate it with the necessary API keys as follows:
+4. **Environment Variables**
 
-plaintext
-Copy code
+Create a `.env` file in the project root directory and populate it with the necessary API keys:
+```
 # Pinecone API Key
 PINECONE_API_KEY = "<your_pinecone_api_key_here>"
 
@@ -54,17 +50,26 @@ HUGGINGFACEHUB_API_TOKEN = "<your_huggingface_api_token_here>"
 GOOGLE_API_KEY = "<your_google_api_key_here>"
 
 # Reddit Credentials for traffic_management.ipynb
+
 CLIENT_ID = "<your_reddit_client_id_here>"
+
 CLIENT_SECRET = "<your_reddit_client_secret_here>"
-Replace <your_pinecone_api_key_here>, <your_huggingface_api_token_here>, <your_google_api_key_here>, <your_reddit_client_id_here>, and <your_reddit_client_secret_here> with your actual API keys and credentials. Instructions for obtaining these keys can be found at:
+```
+Replace <your_pinecone_api_key_here>, <your_huggingface_api_token_here>, <your_google_api_key_here>, <your_reddit_client_id_here>, and <your_reddit_client_secret_here> with your actual API keys and credentials. 
 
-Pinecone API Key
-Hugging Face API Key
-Google API Key
-Start the Application
+Instructions for obtaining these keys can be found at:
+- Get your Pinecone API Key: [Pinecone Quickstart Guide](https://docs.pinecone.io/guides/getting-started/quickstart)
+- Get your Hugging Face API Key: [Hugging Face API Quicktour](https://huggingface.co/docs/api-inference/en/quicktour)
+- Get your Google API Key: [Google AI Setup Tutorial](https://ai.google.dev/tutorials/setup)
 
-Run the Streamlit application:
+### Running the Application
 
-bash
-Copy code
-streamlit run streamlit_app.py
+With the environment set up and the `.env` file configured, you can start the application:
+`streamlit run streamlit_app.py`
+
+Navigate to the URL provided in the terminal to view the application.
+
+## Features
+
+- **Interactive Chatbot**: Engage with our LLM-powered chatbot to explore public sentiments on urban transport.
+- **Traffic Analysis Report**: Access in-depth reports generated from social media data to understand traffic management insights.
